@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>file upload</p>
+<!-- <form action="/atharv.html" method="get" target="_blank"> -->
+
+	<!-- <form action="/atharv.html"> wwhen i will commet drawimage in canvas
+ -->
+ <!-- <form action="/atharv.html">  -->
+	<label for="myfile"> select file: </label>
+
+	<input type="file" id="myfile" name="myfile" multiple>
+	<input type="submit" value="Submt" >
+
+<br>
+<p> select month and year</p>
+ <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+  <br>
+  <p>number feilds</p>
+
+   <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="35">
+  <input type="submit" value="Submit">
+  <br>
+
+
+  <p>Range feilds</p>
+   <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit" value="Submit">
+<br>
+<p> search feilds</p>
+ <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit" value="Submit">
+  <br>
+
+   <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+ <!--  <small>Format: 123-45-678</small><br><br> -->
+  <input type="submit" value="Submit">
+
+  <br>
+    <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit" value="Submit">
+  <br>
+   <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <input type="submit" value="Submit">
+  <br>
+  <h1>The input readonly attribute</h1><br>
+    <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+   <input type="image" src="images.jpg" alt="Submit" width="48" height="48">
+  <!-- <input type="submit" value="Submit"> -->
+  <br>
+<h1>disabled attribute</h1>
+
+<label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <br>
+
+  <h2>size attribute</h2><br>
+<label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4"><br><br>
+  <input type="submit" value="Submit">
+  <br>
+
+<label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="three letter country code"><br><br>
+  <input type="submit" value="Submit">
+<BR>
+ <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+  <input type="submit" value="Submit">
+  <br>
+
+<h1>The input formaction ,formentype ,formmetod , formtarget attribute</h1>
+
+
+ <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+   <input type="submit" value="Submit"> 
+
+   <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+ <!--  <input type="submit" formaction="/atharv.html" value="Submit As Admin"> -->
+<!--  <input type="submit" formenctype="multipart/from-data" value="Submit as multipart/from-data" >
+ -->
+<!--  <input type="submit" value="Submit using Get" >
+ <input type="submit" formmethod="post" value="Submit using POST"> -->
+ <br>
+ <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+
+  <br>
+
+  <br>
+
+<p>Image to use:</p>
+<img id="scream" src="scream.jpg" alt=" Scream" width="220" height="277">
+
+<p>Canvas to fill:</p>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3">browser does not Canvas drow line, circle and hello word ,linear gradient  uses</canvas>
+
+<p><button onclick="myCanvas()">Try It</button></p>
+
+
+
+<br>
+<script >
+
+// function myCanvas() 
+// {
+ //  var c = document.getElementById("myCanvas");
+ //  var ctx = c.getContext("2d");
+ //  var img = document.getElementById("scream");
+ //  ctx.drawImage(img,10,10);
+
+	// }
+	// var c = document.getElementById("myCanvas"); line uses
+	// var ctx = c.getContext("2d");
+	// ctx.moveTo(0, 0);
+	// ctx.line(200,100);
+	// ctx.stroke();
+
+// var c = document.getElementById("myCanvas"); circle use
+// var ctx = c.getContext("2d");
+// ctx.beginPath();
+// ctx.arc(95,50,40,0,2*Math.PI);
+// ctx.stroke();
+
+// var c = document.getElementById("myCanvas"); uses hello world
+// var ctx = c.getContext("2d");
+// ctx.font = "30px Arial";
+// // ctx.fillText("Hello World",10,50); 
+// ctx.strokeText("Hello World", 10,50);
+
+
+// var c = document.getElementById("myCanvas");
+// var ctx = c.getContext("2d");
+// // Create gradient
+// // var grd = ctx.createRedialGradient(0,0,200,0);
+// var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+// grd.addColorStop(0,"red");   circular uses
+// grd.addColorStop(1,"white");
+
+// // Fill with gradient
+// ctx.fillStyle = grd;
+// ctx.fillRect(10,10,150,80);
+
+
+var myVideo = document.getElementById("video1");
+
+function playPause(){
+	if (myVideo.paused) 
+		myVideo.play();
+	else
+		myVideo.Pause();
+}
+
+function makeBig(){
+	myVideo.width = 660;
+}
+
+function makesmall(){
+	myVideo.width = 220;
+}
+
+function makenormal(){
+	myVideo.width = 420;
+}
+
+
+</script>
+
+<br>
+<svg width="100" height="100">
+	<circle cx ="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+	Sorry, your browser does not support inline SVG.
+</svg>
+<br>
+<svg width="400" height="100">
+	<rect width ="400" height="100"
+	 style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+<br>
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+Sorry, your browser does not support inline SVG.
+</svg>
+<br>
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+Sorry, your browser does not support inline SVG.
+
+</svg>
+<br>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana"
+  x="50" y="86">SVG</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+<br>
+<br>
+<div style="text-align:center">
+	<button onclick="playPause()">Play/Pause</button>
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makesmall()">Small</button>
+	<button onclick="makenormal()">Normal</button>
+	<br>
+	<br>
+<video id ="video1" width="420" >
+
+	<!-- <video width="320" height="240" controls>  -->
+ <!--  <source src="SampleVideo_1280x720_5mb.ogv type="video/.ogv"> -->
+
+  <source src="WhatsApp Video 2020-03-08 at 10.25.19 PM.mp4" type="video/mp4"> 
+  Your browser does not support HTML5 video.
+
+</video>
+
+<p> video courtesy of <a href="https://www.visitfinland.com/article/top-places-to-visit-around-helsinki/#94f92f2d" target="_blank">Finland Hilsanki</a>
+	</p>
+ <p>
+
+ 	<audio controls>
+
+ <source src="WhatsApp Ptt 2020-04-24 at 2.07.34 PM.ogg" type="audio/ogg">
+browser does not support the audio element.
+ 	</audio>
+
+<!-- </form> -->
+<!-- </form> -->
+</body>
+</html>
+
+
+
